@@ -1,0 +1,86 @@
+.about-us-full-container {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 66, 38, 1);
+    padding: 100px;
+  }
+  
+  .about-us-full-image {
+    max-width: 32%;
+    margin-bottom: -20px;
+    margin-top: 40px;
+    max-height: 10%; 
+    margin-left: 200px;
+    margin-right: 38px;
+  }
+  
+  .about-us-full-details {
+    flex: 1;
+    font-family: "Lexend Exa";
+    max-width: 100%;
+    margin-top: 100px;
+    color: white;
+  }
+  
+  .about-us-full-details h2 {
+    position: relative;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+    
+  .about-us-full-details h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 180px;
+    height: 4px;
+    background-color: white;
+  }
+
+  .about-us-full-details p {
+    font-size: 18px;
+    line-height: 180%;
+  }
+  
+  @media (max-width: 767.98px) {
+    .about-us-full-container {
+      flex-direction: column;
+      padding: 40px;
+    }
+  
+    .about-us-full-image {
+      max-width: 100%;
+      max-height: auto;
+      margin-top: 80px !important;
+      margin: 0 auto 20px;
+    }
+  
+    .about-us-full-details {
+      max-width: 100%;
+      margin-top: 10px;
+      text-align: start;
+    }
+  
+    .about-us-full-details h2 {
+      font-size: 38px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+
+    .about-us-full-details h2::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 80px;
+      height: 4px;
+      background-color: white;
+    }
+      
+    .about-us-full-details p {
+        font-size: 22px;
+        line-height: 180%;
+        margin-left: 8px;
+      }
+  }

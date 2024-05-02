@@ -1,0 +1,131 @@
+.portfolio {
+    background-color: white;
+    color: black;
+    font-family: "Lexend Exa";
+    padding: 10px;
+    text-align: center; /* Center text in the portfolio container */
+  }
+  
+  .portfolioheading {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    letter-spacing: 0.1cm;
+  }
+
+  .portfoliopara{
+    font-size: 20px;
+    letter-spacing: 0.1cm;
+  }
+  
+  .portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .portfolio-item {
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+  }
+
+  .portfolio-item a {
+    text-decoration: none !important;
+    color: black; /* Set the color of the link text to white */
+  }
+  
+  .portfolio-item h3,
+  .portfolio-item p {
+    color: black; /* Set the color of the heading and paragraph text to white */
+  }
+  
+  .portfolio-item:hover {
+    transform: scale(1.1); /* Add a slight scale effect on hover */
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: 350px;
+    border-radius: 1%;
+  }
+  
+  .portfolio-item h3 {
+    margin: 10px 0;
+    letter-spacing: 0.05cm;
+
+  }
+
+  .portfolio-item p {
+    font-size: 18px;
+  }
+
+  .portfolioline {
+    width: 12%;
+    border: none;
+    border-top: 4px solid white;
+    margin-left: 760px;
+  }
+
+  @media (max-width: 700px) {
+
+    .portfolioheading {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      letter-spacing: 0.1cm;
+    }
+  
+    .portfoliopara{
+      font-size: 12px;
+      letter-spacing: 0.1cm;
+    }
+    
+    .portfolio-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    .portfolio-item {
+      width: 90%;
+      margin: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+    }
+    
+    .portfolio-item:hover {
+      transform: scale(1.1); /* Add a slight scale effect on hover */
+    }
+    
+    .portfolio-item img {
+      width: 100%;
+      height: 200px;
+      border-radius: 1%;
+    }
+    
+    .portfolio-item h3 {
+      margin: 10px 0;
+      font-size: 100%;
+      letter-spacing: 0.05cm;
+      text-transform: uppercase;
+    }
+  
+    .portfolio-item p {
+      font-size: 100%;
+    }
+  
+    .portfolioline {
+      width: 48%;
+      border: none;
+      margin-top: -1%;
+      border-top: 4px solid white;
+      margin-left: 70px;
+    }
+
+  }

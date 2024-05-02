@@ -1,0 +1,100 @@
+.about-us-container {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 66, 38, 1);
+    padding: 40px;
+  }
+  
+  .about-us-image {
+    max-width: 21%;
+    margin-bottom: -30px;
+    margin-left: 280px;
+    margin-right: 38px;
+  }
+  
+  .learn-more-button {
+    padding: 8px 18px;
+    font-size: 20px !important;
+    background-color: transparent;
+    border: none;
+    margin-left: -12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: orange;
+  }
+  
+  .about-us-details {
+    flex: 1;
+    font-family: "Lexend Exa";
+    max-width: 40%;
+    color: white;
+  }
+  
+  .about-us-details h2 {
+    position: relative;
+    font-size: 58px;
+    margin-bottom: 40px;
+  }
+    
+  .about-us-details h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 180px;
+    height: 4px;
+    background-color: white;
+  }
+
+  .about-us-details p {
+    font-size: 22px;
+    line-height: 180%
+  }
+  
+  @media (max-width: 767.98px) {
+    .about-us-container {
+      flex-direction: column;
+      padding: 40px;
+    }
+  
+    .about-us-image {
+      max-width: 100%;
+      margin: 20px;
+    }
+  
+    .about-us-details {
+      max-width: 100%;
+      text-align: start;
+    }
+  
+    .about-us-details h2 {
+      font-size: 34px;
+      margin-left: 6px;
+      margin-bottom: 10px;
+    }
+
+    .about-us-details h2::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 80px;
+      height: 4px;
+      background-color: white;
+    }
+
+    .learn-more-button {
+      padding: 8px 18px;
+      font-size: 18px !important;
+      background-color: transparent;
+      border: none;
+      margin-left: 60px;
+    }
+      
+    .about-us-details p {
+        font-size: 20px;
+        line-height: 180%;
+        margin-left: 8px;
+      }
+  }

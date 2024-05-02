@@ -1,0 +1,40 @@
+.footer {
+    background-color: rgba(0, 66, 38, 1);
+    text-align: center;
+    padding: 30px;
+    color: white;
+    font-family: "Lexend Exa";
+  }
+  
+  .footer-links a {
+    margin: 0 28px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .footer-heading h1 {
+    margin: 10px 0;
+    font-size: 220%;
+  }
+  
+  .footer-heading p {
+    margin: 5px 0;
+    font-size: 80%;
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+
+    .footer-links a {
+        font-size: small;  
+    }
+
+     .footer-heading h1 {
+        font-size: 200%;
+    }
+
+    .footer-heading p {
+        font-size: 80%;
+    }
+}

@@ -1,0 +1,202 @@
+.navbar-nav .nav-link {
+    margin: 30px;
+    margin-right: 160px;
+    position: relative;
+    padding-bottom: 0%;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  .NavLink-underline {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    animation: 0.3s logo-animate ease-in;
+  }
+
+  .bg-transparent{
+    border-bottom: white;
+    background-color: rgba(0, 66, 38, 1) !important;
+    font-family: "Lexend Exa";
+  }
+
+  .navbar-logo {
+    width: 100%;
+    height: 8vh;
+    margin-left: 50%;
+    margin-top: -1%;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 24px;
+    line-height: 0px;
+    transition: 0.3s logo;
+    letter-spacing: 2px;
+  }
+
+  @keyframes logo-animate {
+
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+  }
+
+  @keyframes nav-items-animate {
+
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+    
+  }
+
+  .logo-container {
+    animation: 0.4s logo-animate ease-in;
+  }
+
+  .navbar-logo{
+    text-decoration: none;
+    color: white;
+    margin-top: -20px;
+  }
+
+  .NavLink-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 4px; 
+    background-color: white; 
+    transition: width 0.4s ease; 
+  }
+  
+  .NavLink-underline::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 10px;
+    height: 4px; 
+    background-color: white; 
+  }
+
+  .NavLink-underline:hover::after {
+    width: 70%; 
+  }
+  
+  .navbar-nav .nav-link:hover {
+    opacity: 1; 
+  }
+
+  .hamburger-react {
+    color: white;
+  }
+
+  .floaty-navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
+    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease,; /* Include opacity transition */
+  }
+  
+  @media (max-width: 767.98px) {
+    .navbar-collapse {
+      background-color: rgba(0, 66, 38, 0.95);
+      border-color: transparent;
+      position: fixed;
+      top: 73px;
+      right: -100%; /* Changed from -80% */
+      height: 54vh;
+      width: 100%;
+      transition: right 0.1s ease-in-out; /* Changed timing function */
+      overflow-y: scroll;
+      overflow-x: hidden;
+      z-index: 1000;
+      border-bottom: 1px solid black !important;
+  }
+  
+  .navbar-collapse.open {
+      right: 0;
+  }
+
+    .bg-transparent{
+      border-bottom: white;
+      height: 12vh;
+    }
+    
+    .navbar-toggler {
+      border-color: transparent !important;
+      margin-top: -88px;
+      margin-left: 80%;
+    }
+    
+    .navbar-logo {
+      margin-left: 30px;
+      font-size: 22px;
+      line-height: 80px;
+      letter-spacing: 2px;
+    }
+  
+    .navbar-collapse {
+      opacity: 1; 
+      &.scrolled {
+        opacity: 0.9 !important;
+      }
+    }
+  
+    .navbar-collapse.show {
+      right: 0;
+    }
+  
+    .navbar-nav {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-top: 1rem;
+      justify-content: flex-start;
+      padding-right: 50px;
+    }
+  
+    .navbar-nav .nav-link {
+      color: black;
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 1px solid transparent;
+      width: 100%;
+    }
+  
+    .NavLink-underline::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0%;
+      height: 4px; 
+      background-color: white; 
+      transition: width 0.4s ease; 
+    }
+
+    .NavLink-underline:hover::after {
+      width: 50%; 
+    }
+
+    .navbar-nav .nav-link:hover {
+      opacity: 1; 
+    }
+
+    .NavLink-underline {
+      font-size: 18px;
+    } 
+  }
+  
