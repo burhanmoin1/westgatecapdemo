@@ -25,7 +25,7 @@ const PortfolioItem = ({ image, name, description }) => {
     link = (
       <a href="sherbrookeone">
           <img
-            src={image.src}
+            src={image}
             alt={name}
             className="portfolio-image"
           />
@@ -37,7 +37,7 @@ const PortfolioItem = ({ image, name, description }) => {
       link = (
         <a href="sherbrooketwo">
             <img
-              src={image.src}
+              src={image}
               alt={name}
               className="portfolio-image"
             />
@@ -49,7 +49,7 @@ const PortfolioItem = ({ image, name, description }) => {
       link = (
         <a href="sherbrookethree">
             <img
-              src={image.src}
+              src={image}
               alt={name}
               className="portfolio-image"
             />
@@ -61,7 +61,7 @@ const PortfolioItem = ({ image, name, description }) => {
       link = (
         <a href="sherbrookefour">
             <img
-              src={image.src}
+              src={image}
               alt={name}
               className="portfolio-image"
             />
@@ -73,7 +73,7 @@ const PortfolioItem = ({ image, name, description }) => {
     link = (
       <Link href={`/property/${cleanedName.replace(/\s+/g, '-').toLowerCase()}`}>
           <img
-            src={image.src}
+            src={image}
             alt={name}
             className="portfolio-image"
           />
@@ -88,19 +88,19 @@ const PortfolioItem = ({ image, name, description }) => {
 
 const Portfolio = () => {
   const portfolioData = [
-    { id: 2, image: Frontenac, name: '2087 - 2093 Frontenac', description: 'Apartment - Montreal' },
-    { id: 6, image: MarieAnne, name: '2189 - 2199 Marie-Anne', description: 'Apartment - Montreal'},
-    { id: 5, image: Sherbrooke, name: '2290 Sherbrooke', description: 'Apartment - Montreal'},
-    { id: 4, image: Fullum, name: '2300 - 2551 Fullum', description: 'Apartment - Montreal' },
-    { id: 10, image: Sherbrookefour, name: '2306 Sherbrooke', description: 'Apartment - Montreal'},
-    { id: 10, image: Sherbrooketwo, name: '2308 Sherbrooke', description: 'Apartment - Montreal'},
-    { id: 10, image: Sherbrookethree, name: '2314 Sherbrooke', description: 'Apartment - Montreal'},
-    { id: 7, image: Dandurand, name: '2700 - 2710 Dandurand', description: 'Apartment - Montreal'},
-    { id: 3, image: VillImage, name: '294 Villienueve Quest', description: 'Apartment - Montreal' },
-    { id: 8, image: Hochelaga3657, name: '3657 - 3667 De Chambly', description: 'Apartment - Montreal'},
-    { id: 10, image: StJacques, name: '7388 St Jacques', description: 'Apartment - Montreal'},
-    { id: 1, image: CasgrainImage, name: '7530 - 7538 Casgrain', description: 'Apartment - Montreal' },
-    { id: 8, image: Hochelaga8578, name: '8578 - 8590 Baldwin', description: 'Apartment - Montreal'},
+    { id: 2, image: Frontenac.src, name: '2087 - 2093 Frontenac', description: 'Apartment - Montreal' },
+    { id: 6, image: MarieAnne.src, name: '2189 - 2199 Marie-Anne', description: 'Apartment - Montreal'},
+    { id: 5, image: Sherbrooke.src, name: '2290 Sherbrooke', description: 'Apartment - Montreal'},
+    { id: 4, image: Fullum.src, name: '2300 - 2551 Fullum', description: 'Apartment - Montreal' },
+    { id: 10, image: Sherbrookefour.src, name: '2306 Sherbrooke', description: 'Apartment - Montreal'},
+    { id: 10, image: Sherbrooketwo.src, name: '2308 Sherbrooke', description: 'Apartment - Montreal'},
+    { id: 10, image: Sherbrookethree.src, name: '2314 Sherbrooke', description: 'Apartment - Montreal'},
+    { id: 7, image: Dandurand.src, name: '2700 - 2710 Dandurand', description: 'Apartment - Montreal'},
+    { id: 3, image: VillImage.src, name: '294 Villienueve Quest', description: 'Apartment - Montreal' },
+    { id: 8, image: Hochelaga3657.src, name: '3657 - 3667 De Chambly', description: 'Apartment - Montreal'},
+    { id: 10, image: StJacques.src, name: '7388 St Jacques', description: 'Apartment - Montreal'},
+    { id: 1, image: CasgrainImage.src, name: '7530 - 7538 Casgrain', description: 'Apartment - Montreal' },
+    { id: 8, image: Hochelaga8578.src, name: '8578 - 8590 Baldwin', description: 'Apartment - Montreal'},
     
   ];
 
