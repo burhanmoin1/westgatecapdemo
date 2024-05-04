@@ -9,6 +9,7 @@ export default function Home() {
   return (
     
     <main >
+      <link rel="icon" href="./favicon.ico"/>
       <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Tilt+Neon&display=swap" rel="stylesheet"/>
         <CustomNavbar />
         <FirstComponent />
